@@ -1,0 +1,258 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #171A21;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1B2838;
+    padding: 20px 0;
+    border-bottom: 5px solid #171A21;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo img {
+    margin: 0;
+    color: #FFFFFF;
+    margin-top: 20px;
+    width: 160px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #171A21;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/image/gta.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.hero h2 {
+    color: #FFFFFF;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.herocatalog {
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.herocatalog::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/image/pc5.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.herocatalog h2 {
+    color: #FFFFFF;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.herocatalog p {
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.btn {
+    background-color: #176B87;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #171A21;
+}
+
+.games {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.games h2 {
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game {
+    background-color: #1B2838;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    width: 30%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.game:hover {
+    transform: translateY(-10px);
+}
+
+.game img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+.game h3 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.game p {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+
+.footer {
+    background-color: #1B2838;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #171A21;
+}
+
+.footer p {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Additional styles */
+.store {
+    background-color: #222831;
+    padding: 40px 0;
+}
+
+.store .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Menengahkan secara vertikal */
+}
+
+.sidebar {
+    background-color: #30475E;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Menengahkan teks */
+}
+
+.sidebar h3 {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Menengahkan teks */
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    text-align: center; /* Menengahkan teks */
+}
+
+.sidebar ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #71A3FF;
+}

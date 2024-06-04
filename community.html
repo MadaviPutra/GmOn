@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GmOn 🕹 Community</title>
+    <link rel="stylesheet" href="community.css">
+    <link rel="icon" href="/image/favicon.ico">
+    <style>
+        /* Tambahkan CSS untuk pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            color: black;
+            
+        }
+
+        .popup-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/image/logo.png" alt="Logo GmOn">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="updates-offers">
+            <div class="container">
+                <h2>UPDATES AND OFFERS</h2>
+                <div class="updates">
+                    <div class="update" onclick="openPopup('New Game Release: Cyber Frontier', 'Explore the futuristic world of Cyber Frontier. Available now in our store!', '/image/cp.jpg')">
+                        <img src="/image/cp.jpg" alt="New Game Release">
+                        <h3>New Game Release: Cyber Frontier</h3>
+                        <p>Explore the futuristic world of Cyber Frontier. Available now in our store!</p>
+                    </div>
+                    <div class="update" onclick="openPopup('Summer Sale', 'Don\'t miss our summer sale! Get up to 50% off on selected titles.', '/image/ss.jpg')">
+                        <img src="/image/ss.jpg" alt="Summer Sale">
+                        <h3>Summer Sale</h3>
+                        <p>Don't miss our summer sale! Get up to 50% off on selected titles.</p>
+                    </div>
+                    <div class="update" onclick="openPopup('Horizon Forbidden West™ Complete Edition', 'Experience the epic Horizon Forbidden West™ in its entirety with bonus content and the Burning Shores expansion included.', '/image/hr.jpg')">
+                        <img src="/image/hr.jpg" alt="Horizon Forbidden West™ Complete Edition">
+                        <h3>Guide : Horizon Forbidden West™ Complete Edition</h3>
+                        <p>Experience the epic Horizon Forbidden West™ in its entirety with bonus content and the Burning Shores expansion included.</p>
+                    </div>
+                    <!-- Add more updates and offers as needed -->
+                </div>
+            </div>
+        </section>
+        <section class="community-activity">
+            <div class="container">
+                <h2>Community Activity</h2>
+                <div class="activity">
+                    <div class="activity-item" onclick="openPopup('Discussion: Cyber Frontier Gameplay', 'Join the discussion about strategies and gameplay tips for Cyber Frontier.', '/image/cp1.jpg')">
+                        <img src="/image/cp1.jpg" alt="Discussion: Cyber Frontier Gameplay">
+                        <h3>Discussion: Cyber Frontier Gameplay</h3>
+                        <p>Join the discussion about strategies and gameplay tips for Cyber Frontier.</p>
+                    </div>
+                    <div class="activity-item" onclick="openPopup('Tournament: GmOn Cup', 'Compete in our annual GmOn Cup tournament! Register now and show off your skills.', '/image/to.jpg')">
+                        <img src="/image/to.jpg" alt="Tournament: GmOn Cup">
+                        <h3>Tournament: GmOn Cup</h3>
+                        <p>Compete in our annual GmOn Cup tournament! Register now and show off your skills.</p>
+                    </div>
+                    <div class="activity-item" onclick="openPopup('Screenshot: Elden Ring Gameplay', '𝔏𝔦𝔠𝔥𝔡𝔯𝔞𝔤𝔬𝔫 𝔉𝔬𝔯𝔱𝔦𝔰𝔰𝔞𝔵 𝔰𝔲𝔪𝔪𝔬𝔫𝔰 𝔥𝔦𝔰 𝔄𝔫𝔠𝔦𝔢𝔫𝔱 𝔇𝔯𝔞𝔤𝔬𝔫𝔰\' 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 𝔖𝔭𝔢𝔞𝔯', '/image/er.jpeg')">
+                        <img src="/image/er.jpeg" alt="Screenshot: Elden Ring Gameplay">
+                        <h3>Screenshot: Elden Ring Gameplay</h3>
+                        <p>𝔏𝔦𝔠𝔥𝔡𝔯𝔞𝔤𝔬𝔫 𝔉𝔬𝔯𝔱𝔦𝔰𝔰𝔞𝔵 𝔰𝔲𝔪𝔪𝔬𝔫𝔰 𝔥𝔦𝔰 𝔄𝔫𝔠𝔦𝔢𝔫𝔱 𝔇𝔯𝔞𝔤𝔬𝔫𝔰' 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 𝔖𝔭𝔢𝔞𝔯</p>
+                    </div>
+                    <!-- Add more community activities as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GmOn Community. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Pop-up container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img id="popup-img" src="" alt="Popup Image" style="width: 100%;">
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(title, description, imgSrc) {
+    document.getElementById('popup-title').innerText = decodeURIComponent(title);
+    document.getElementById('popup-description').innerText = decodeURIComponent(description);
+    document.getElementById('popup-img').src = decodeURIComponent(imgSrc);
+    document.getElementById('popup').style.display = "block";
+}
+
+
+        function closePopup() {
+            document.getElementById('popup').style.display = "none";
+        }
+    </script>
+</body>
+</html>

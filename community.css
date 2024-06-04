@@ -1,0 +1,136 @@
+styles.css and community.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #171A21;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1B2838;
+    padding: 20px 0;
+    border-bottom: 5px solid #171A21;
+}
+
+.logo img {
+    margin: 0;
+    color: #FFFFFF;
+    margin-top: 20px;
+    width: 160px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #171A21;
+}
+
+/* Updates and Offers section */
+.updates-offers {
+    background-color: #222831;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.updates {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.update {
+    background-color: #1B2838;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.update h3 {
+    margin-top: 0;
+}
+
+.update p {
+    margin-bottom: 15px;
+}
+.update img {
+    max-width: 100%;
+}
+
+/* Community Activity section */
+.community-activity {
+    background-color: #222831;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.activity {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.activity-item {
+    background-color: #1B2838;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item h3 {
+    margin-top: 0;
+}
+
+.activity-item p {
+    margin-bottom: 15px;
+}
+
+/* Additional space for images */
+.activity-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #1B2838;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}

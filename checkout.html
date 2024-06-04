@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Steam</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" href="/image/favicon.ico">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="/image/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="checkout">
+    <div class="container">
+        <h2>Checkout</h2>
+        <div class="cart-items">
+            <!-- List of items in the cart -->
+            <div class="cart-item">
+                <img src="/image/al.jpg" alt="Game 2">
+                <div class="item-details">
+                    <h3>Apex Legends™</h3>
+                    <p>Conquer with character in Apex Legends, a free-to-play* Hero shooter where legendary characters with powerful abilities team up to battle for fame & fortune on the fringes of the Frontier.
+                    </p>
+                    <p>$19.99</p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="/image/s4.jpg" alt="Game 3">
+                <div class="item-details">
+                    <h3>The Sims™ 4</h3>
+                            <p>Unleash your imagination and create a unique world of Sims that’s an expression of you. Download for free, and customize every detail from Sims to homes and much more. Choose how Sims look, act, and dress, then decide how they’ll live out each day.</p>
+                    <p>$29.99</p>
+                </div>
+            </div>
+            
+            <!-- End of list -->
+        </div>
+        <div class="total">
+            <h3>Total:</h3>
+            <p>$49.98</p>
+        </div>
+        <div class="checkout-btn">
+            <a href="#" class="btn" id="paymentBtn">Proceed to Payment</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 GmOn Game Store. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Popup -->
+<div class="popup" id="paymentPopup">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2>Payment Successful!</h2>
+    <p>Thank You For Your Trust</p>
+</div>
+
+<script>
+    // Mendapatkan tombol "Proceed to Payment"
+    var paymentBtn = document.getElementById("paymentBtn");
+    
+    // Mendapatkan popup
+    var paymentPopup = document.getElementById("paymentPopup");
+
+    // Menambahkan event listener untuk tombol "Proceed to Payment"
+    paymentBtn.addEventListener("click", function() {
+        // Menampilkan popup
+        paymentPopup.style.display = "block";
+    });
+
+    // Fungsi untuk menutup popup
+    function closePopup() {
+        paymentPopup.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
